@@ -137,14 +137,15 @@
     font-family: termina, sans-serif;
     border-bottom: #727171 solid 2px;
 }
-.items-item-footer{
+.items-footer{
     display: flex;
     flex-direction: column;
     padding-top: 20px;
+    align-items: center;
 }
 
 
-.items-item-footer a{
+.items-footer a{
     color: #727171;
     font-size: 0.85em;
     letter-spacing: 0.6px;
