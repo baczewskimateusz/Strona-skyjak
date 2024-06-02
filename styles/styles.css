@@ -4,6 +4,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --primary-color: #004677;
+    --background-color: #f4f4f4;
+    --text-color-footer:#727171;
+}
 body{
     margin: 0;
     padding: 0;
@@ -15,43 +20,10 @@ body{
 html, body {
     height: 100%;
 }
-.nav-conteiner{
-    display: flex;
-    justify-content: center;
-    background-color: #f4f4f4; 
-}
-.navigation{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-}
 
-.nav-bar-links{
-    display: flex;
-    align-items: center;
-}
-.nav-bar-links a{
-    padding: 15px
-}
-
-.nav-bar-links .dropdown-products{
-    position: absolute;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 10px;
-    flex-direction: column;
-    display:none;
-}
-.nav-bar-links .products:hover .dropdown-products{
-    display: flex;
-} 
 a{
     text-decoration: none;
-    color: #004677;
+    color:var(--primary-color);
     font-size: 0.9em;
     letter-spacing: 0.6px;
     text-transform: uppercase;
@@ -63,92 +35,7 @@ a:hover{
     text-decoration: underline;
     text-underline-offset: 7px;
 }
-.nav-button a{
-    border: 1px solid #004677;
-    letter-spacing: .6px;
-    padding: .64em 1.88em;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all .2s;
-    margin: 30px;
-}
-.nav-button a:hover{
-    background-color: #004677;
-    color: #f4f4f4;
-}
 
-.footer-conteiner{
-    display: flex;
-    justify-content: center;
-    background-color: #f4f4f4; 
-}
-
-.footer{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    max-width: 1440px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.footer-bottom .social-media{
-    display: flex;
-    flex-direction: row;
-}
-.footer-bottom{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.footer-bottom hr{
-    background-color: #004677;
-    height: 2px;
-    width: 100%;
-}
-.logo-frameless{
-    padding-right: 20px;
-}
-.logo-frameless img{
-    height: 50px;
-}
-.copy-text{
-    font-family: franklin-gothic-atf, sans-serif;
-    font-size: .88em;
-    color: #727171;
-}
-
-.copyright-conteiner{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.social-media img{
-    width: 25px;
-}
-
-.social-media div {
-    padding: 10px;
-}
-
-.find-us-text{
-    font-family: franklin-gothic-atf, sans-serif;
-    font-size: .88em;
-    padding-bottom: 5px;
-    color: #727171;
-    font-weight: bold;
-}
-
-.line {
-    width: 100%; 
-    height: 1px; 
-    background-color: #727171; 
-    margin: 0; 
-}
 
 .main-content{
     background-color: white;
@@ -156,90 +43,11 @@ a:hover{
     width: 100%;
     height: 100%;
     flex-grow: 1;
-}
-.footer-column-wrapper{
-    display: flex;
-    padding: 10px;
-    width: 100%;
-    justify-content: space-between;
-    max-width: 1440px;
-}
-.person{
-    display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    border: 1px solid  #d8d3d3;
-    padding: 5px;
-}
-
-.person a {
-    font-family: franklin-gothic-atf, sans-serif;
-    font-size: 0.75em;
-    color: #727171;
-    text-transform: lowercase;
-    font-weight: normal;
-}
-.person a :hover{
-    text-decoration: underline;
-}
-.email{
-    padding: 10px 0px;
-}
-.phone-number{
-    padding-top: 20px;
-}
-.person-img img{
-    width: 100px;
-    border-radius: 50%;
-}
-
-.person-name{
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: #727171;
-    font-size: 0.9em;
-    letter-spacing: 0.6px;
-    line-height: 1;
-    font-family: termina, sans-serif;
-    border: 1px solid  #d8d3d3;
-    width: 100%;
-}
-
-.main-info-footer{
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    padding: 0px 40px;
-}
-
-.main-info-footer p{
-    color: #727171;
-    font-size: 0.95em;
-    letter-spacing: 0.6px;
-    line-height: 1;
-    font-family: termina, sans-serif;
-    border-bottom: #727171 solid 2px;
-}
-.items-item-footer{
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
 }
 
 
-.items-item-footer a{
-    color: #727171;
-    font-size: 0.85em;
-    letter-spacing: 0.6px;
-    line-height: 1;
-    font-weight: normal;
-    font-family: termina, sans-serif;
-    padding: 5px 0px;
-    text-transform: none;
-
-}
 
 
 
