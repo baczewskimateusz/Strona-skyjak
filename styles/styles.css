@@ -24,7 +24,7 @@ html, body {
 a{
     text-decoration: none;
     color:var(--primary-color);
-    font-size: 0.9em;
+    font-size: 0.9rem;
     letter-spacing: 0.6px;
     text-transform: uppercase;
     font-weight: 600;
@@ -46,71 +46,3 @@ a:hover{
     justify-content: center;
     align-items: center;
 }
-
-
-
-
-
-/* :root{
-    box-sizing: border-box;
-    color: black;
-    background-color: #C0c0c0;
-    font-family: "Montserrat", sans-serif;
-}
-body{
-    margin: 0;
-}
-
-*,::before, ::after{
-    box-sizing: inherit;
-}
-
-.logo-container {
-    display: flex;
-    justify-content: center;
-    padding:15px;
-}
-
-.text-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-}
-
-.owners{
-    padding-left: 20px;
-    border-left: 1px solid black;
-    font-size: 1rem;
-}
-.company-name{
-    padding-right: 20px;
-    font-weight: bold;
-}
-
-.conteiner ul{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    padding-inline-start: 0px;
-}
-.conteiner li{
-    padding: 15px;
-}
-
-.image-conteiner{
-    display: grid;
-    gap: 10px;
-    padding: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    margin: 0 10%;
-}
-.image-conteiner img{
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 1s; 
-}
-.image-container img:hover {
-    transform: scale(1.1);
-} */

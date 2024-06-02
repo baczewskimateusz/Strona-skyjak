@@ -3,6 +3,17 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.text())
         .then(data => {
             document.getElementById('header').innerHTML = data;
+
+
+    const hamburger = document.querySelector(".hamburger");
+    const navMenu = document.querySelector(".nav-bar-links");
+
+    hamburger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    }
         });
 
     fetch('footer.html')
@@ -11,3 +22,5 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('footer').innerHTML = data;
         });
 });
+
+
