@@ -143,10 +143,12 @@
     font-weight: bolder;
     justify-content: center;
     white-space: nowrap;
+    padding-right: 10px;
 }
 .items-footer{
-    display: flex;
+    display: flex ;
     flex-direction: column;
+    justify-content: center;
     padding-top: 20px;
     align-items: center;
 }
@@ -163,7 +165,9 @@
     text-transform: none;
 }
 
-
+.arrow{
+    display: none;
+}
 
 @media only screen and (max-width: 830px) {
     .main-info-footer{
@@ -177,6 +181,12 @@
 
     .items-footer{
         padding: 15px 0px;
+        display: none;
+    }
+
+    .items-name-footer{
+        padding: 10px 0px;
+        cursor: pointer;
     }
     .person {
         order: 2;
@@ -188,6 +198,23 @@
         order: 3; 
     }
 
+    .arrow{
+        display:block;
+        margin-left: 10px;
+    }
+    .items-name-footer.active .arrow {
+        transform: rotate(180deg);
+    }
+
+    .items-name-footer.active + .items-footer {
+        display: block;
+    }
+
+}
+@media only screen and (min-width: 830px) {
+    .items-footer{
+        display: flex !important;
+    }
 }
 
 
