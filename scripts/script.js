@@ -23,21 +23,20 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('footer').innerHTML = data;
 
         const items = document.querySelectorAll('.items-name-footer');
-        console.log(items)
-                items.forEach(item => {
-                    item.addEventListener('click', function() {
-                        const itemsFooter = this.nextElementSibling;
-                        if (itemsFooter.style.display === "none" || itemsFooter.style.display === "") {
-                            itemsFooter.style.display = "flex";
-                            this.classList.add('active');
-                        } else {
-                            itemsFooter.style.display = "none";
-                            this.classList.remove('active');
-                        }
-                    });
+        items.forEach(item => {
+            item.addEventListener('click', function() {
+                const isActive = this.classList.contains('active');
+                items.forEach(i => {
+                    i.classList.remove('active');
+                    i.nextElementSibling.style.display = "none";
                 });
+
+                if (!isActive) {
+                    this.nextElementSibling.style.display = "flex";
+                    this.classList.add('active');
+                }
+            });
         });
-
+    });
 });
-
 
